@@ -1,0 +1,55 @@
+.App-content-loader{
+    /* background-color: #62FFD9; */
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.App-content-loader img{
+    filter: invert();
+    width: 3rem;
+    height: 5rem;
+}
+.App-content-loader .meter{
+    width: 12rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.9rem dotted orangered;
+    border-radius: 50%;
+    animation: revealBorder 1s infinite;
+}
+.loading_text{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-family: cursive;
+}
+
+.rotated-image {
+    animation: rotateAnimation 1s linear infinite; /* Adjust the duration and timing function as needed */
+    transform-origin: center bottom;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(-70deg);
+    }
+    50% {
+        transform: rotate(70deg);
+    }
+    100%{
+        transform: rotate(-70deg);
+    }
+}
+
+@keyframes revealBorder{
+    0% {
+        border-color: cyan;
+    }
+    100%{
+        border-color: red;
+    }
+}

@@ -1,0 +1,72 @@
+.main{
+    /* background: linear-gradient(-45deg, #003737, #004B59, #002222); */
+    background-image: url('/home_background.jpg'); /* Replace 'your-image-path.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_text{
+    display: flex;
+    flex-direction: column;
+}
+.left_text span:nth-child(3){
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+    color: rgba(0, 0, 0, 0);
+}
+
+.left_text span:first-child{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding-bottom: 5px;
+}
+
+.textarea{
+    background: none;
+    resize: none;
+    padding: 10px;
+    margin: 20px;
+}
+.send_button{
+    padding: 5px;
+    background-color: #273535;
+    color: white;
+    width: 100px;
+    min-height: 50px;
+    border-radius: 50px;
+    font-size: 17px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.container{
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .main div{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .textarea{
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+.main{
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+}
+
+.title{
+    border-bottom: 2px solid white;
+    padding: 10px 20px;
+}
+
+.content{
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.popularity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+.popularity div{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.popularity img{
+    margin: 0px 5px;
+    filter: invert();
+}
+
+@media only screen and (max-width: 767px) {
+    .main{
+        min-width: 90%;
+    }
+    .popularity div{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+}

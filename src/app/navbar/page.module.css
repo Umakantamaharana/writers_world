@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.pages a{
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+.logo{
+    /* position: absolute;
+    left: 50px;
+    margin-top: 5px; */
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 40px;
+    filter: invert();
+    margin-right: 5px;
+}
+
+.profile{
+    position: absolute;
+    right: 20px;
+    margin-top: 5px;
+}
+
+.profile img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 40px;
+}
